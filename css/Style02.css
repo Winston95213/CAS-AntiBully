@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+
+@keyframes gradientAnimationSection4 {
+  0% {
+    background: linear-gradient(135deg, #deeaee 0%, #c2d4d8 100%);
+  }
+  50% {
+    background: linear-gradient(45deg, #c2d4d8 0%, #deeaee 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #deeaee 0%, #c2d4d8 100%);
+  }
+}
+
+@keyframes gradientAnimationSection5 {
+  0% {
+    background: linear-gradient(135deg, #b1cbbb 0%, #97a8a0 100%);
+  }
+  50% {
+    background: linear-gradient(45deg, #97a8a0 0%, #b1cbbb 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #b1cbbb 0%, #97a8a0 100%);
+  }
+}
+
+@keyframes gradientAnimationSection6 {
+  0% {
+    background: linear-gradient(135deg, #deeaee 0%, #c2d4d8 100%);
+  }
+  50% {
+    background: linear-gradient(45deg, #c2d4d8 0%, #deeaee 100%);
+  }
+  100% {
+    background: linear-gradient(135deg, #deeaee 0%, #c2d4d8 100%);
+  }
+}
+
+section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: black;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+section:nth-child(4) {
+  animation: gradientAnimationSection4 8s infinite alternate;
+}
+
+section:nth-child(5) {
+  animation: gradientAnimationSection5 8s infinite alternate;
+}
+
+section:nth-child(6) {
+  animation: gradientAnimationSection6 8s infinite alternate;
+}
+
+
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title{
+  font-size: 4em;
+  margin-bottom: 50px;
+}
+
+.content{
+  position: relative;
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .text-box{
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  padding: 70px;
+  max-width: 850px;
+  max-height: 550px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 1.1em;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-80px);
+}
+
+.content .text-box h3{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.container .section-title{
+  font-size: 3em;
+  margin-bottom: 80px;
+  transform: translateY(-80px) ;
+}
+
+.info-title{
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.info{
+  width: 700px;
+  margin-left: 50px;
+}
